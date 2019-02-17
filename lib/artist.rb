@@ -24,6 +24,4 @@ class Artist
     @songs
   end
 
-  end
-
 end
