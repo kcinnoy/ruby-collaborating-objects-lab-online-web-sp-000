@@ -7,10 +7,8 @@ class MP3Importer
   end
 
   def files
-   xx = Dir.entries(path)[1..-2]
-   xxx = Dir.entries(path)
-   binding.pry
- end
+   Dir.entries(path)[1..-2]
+  end
 
  def import
    files.each {|file| Song.new_by_filename(file)}
