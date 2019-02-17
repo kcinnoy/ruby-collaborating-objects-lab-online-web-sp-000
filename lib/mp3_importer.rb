@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-   Dir.entries(path)[1..-2]
+   xx = Dir.entries(path)[1..-2]
    binding.pry
  end
 
