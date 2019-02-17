@@ -5,6 +5,7 @@ class Artist
 
   def initialize(name)
     @name = name
+    @songs = []
   end
 
   def find_or_create_by_name
@@ -15,7 +16,14 @@ class Artist
     end
   end
 
-  def add_song
-    
+  def add_song(song)
+    @songs << song
   end
+
+  def song
+    @songs
+  end
+
+  end
+
 end
